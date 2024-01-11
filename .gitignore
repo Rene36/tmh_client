@@ -1,0 +1,4 @@
+tmh_client/__pycache__/*
+configs/*
+main.py
+*.ipynb
