@@ -17,12 +17,12 @@ def plot_data(df: pd.DataFrame,
     fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(9, 6))
     fontsize: int = 10
 
-    df.plot(x="start_curtailment", y="nominal_power",
+    df.plot(x="start_curtailment", y="power_curtailed",
             color="black", label="Power [kW]", ax=ax)
     ax.get_legend().remove()
 
     ax2 = ax.twinx()
-    df.plot(x="start_curtailment", y="sum_energy_curtailed",
+    df.plot(x="start_curtailment", y="energy_curtailed",
             color="yellow", label="Energy [kWh]", ax=ax2)
 
     ax.set_xlabel("", fontsize=fontsize)

@@ -23,7 +23,7 @@ class ProcessData:
         self._col_to_datetime(col_name=["start_curtailment",
                                         "end_curtailment"])
         self._sort_by_column(col_name="start_curtailment")
-        self._calc_cumsum(col_name="energy")
+        self._calc_cumsum(col_name="energy_curtailed")
 
     def get_data(self) -> pd.DataFrame:
         """
